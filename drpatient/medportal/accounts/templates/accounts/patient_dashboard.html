@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Dashboard</title>
+</head>
+<body>
+    <h2>Welcome, {{ user.first_name }} {{ user.last_name }}</h2>
+    <p><strong>Username:</strong> {{ user.username }}</p>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+    <p><strong>Address:</strong> {{ user.address_line1 }}, {{ user.city }}, {{ user.state }}, {{ user.pincode }}</p>
+
+    <h3>Patient's Dashboard</h3>
+    <ul>
+        <li><a href="#">Book Appointment</a></li>
+        <li><a href="#">View Medical Records</a></li>
+        <li><a href="#">Consult a Doctor</a></li>
+    </ul>
+
+    <a href="{% url 'logout' %}">Logout</a>
+</body>
+</html>
