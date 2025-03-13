@@ -70,3 +70,107 @@ To become an Azure Data Engineer, mastering SQL is crucial. You'll need to write
 📌 Resources:
 
     🎥 Azure Synapse SQL Guide
+
+
+
+
+
+
+🚀 SQL Fundamentals – SELECT, WHERE, GROUP BY, ORDER BY
+
+These are the basic SQL commands used to retrieve and organize data in a relational database. Let’s break them down with examples and hands-on exercises.
+1️⃣ SELECT – Retrieving Data
+
+The SELECT statement is used to retrieve data from a database table.
+📝 Syntax:
+
+SELECT column1, column2 FROM table_name;
+
+✅ Example:
+
+Retrieve all customer names and their emails from the Customers table.
+
+SELECT customer_name, email FROM Customers;
+
+🔹 * selects all columns from the table:
+
+SELECT * FROM Customers;
+
+2️⃣ WHERE – Filtering Data
+
+The WHERE clause filters records based on conditions.
+📝 Syntax:
+
+SELECT column1, column2 FROM table_name WHERE condition;
+
+✅ Example:
+
+Retrieve customers from India only.
+
+SELECT customer_name, email FROM Customers WHERE country = 'India';
+
+🔹 Use comparison operators (=, >, <, >=, <=, !=):
+
+SELECT * FROM Orders WHERE order_amount > 500;
+
+🔹 Use logical operators (AND, OR, NOT):
+
+SELECT * FROM Customers WHERE country = 'India' AND city = 'Delhi';
+
+3️⃣ GROUP BY – Aggregating Data
+
+The GROUP BY statement groups rows that have the same values into summary rows. It is often used with aggregate functions (COUNT, SUM, AVG, MAX, MIN).
+📝 Syntax:
+
+SELECT column1, aggregate_function(column2) FROM table_name 
+GROUP BY column1;
+
+✅ Example:
+
+Find the total sales per customer from the Orders table.
+
+SELECT customer_id, SUM(order_amount) AS total_spent
+FROM Orders
+GROUP BY customer_id;
+
+🔹 Count the number of orders per country:
+
+SELECT country, COUNT(*) AS total_orders
+FROM Customers
+GROUP BY country;
+
+4️⃣ ORDER BY – Sorting Results
+
+The ORDER BY clause sorts the results in ascending (ASC) or descending (DESC) order.
+📝 Syntax:
+
+SELECT column1, column2 FROM table_name 
+ORDER BY column1 ASC|DESC;
+
+✅ Example:
+
+Retrieve top 5 highest orders from the Orders table.
+
+SELECT * FROM Orders 
+ORDER BY order_amount DESC 
+LIMIT 5;
+
+🔹 Sort customers by name in alphabetical order:
+
+SELECT * FROM Customers 
+ORDER BY customer_name ASC;
+
+🔥 Hands-on SQL Exercises
+
+Try running these queries in a database (e.g., MySQL, PostgreSQL, SQL Server):
+
+1️⃣ Get the names and emails of customers from "USA".
+2️⃣ Find the total number of orders for each customer.
+3️⃣ Get the top 3 highest order amounts.
+
+
+
+
+
+
+
