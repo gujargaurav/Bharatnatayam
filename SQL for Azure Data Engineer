@@ -1,0 +1,72 @@
+🚀 SQL for Azure Data Engineers – Learning Plan
+
+To become an Azure Data Engineer, mastering SQL is crucial. You'll need to write queries, stored procedures, and optimize performance for large datasets.
+📌 Week 1: SQL Basics & Query Writing
+
+📚 Topics to Learn:
+✅ SQL Fundamentals – SELECT, WHERE, GROUP BY, ORDER BY
+✅ Joins – INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN
+✅ Subqueries & Common Table Expressions (CTEs)
+✅ Window Functions – ROW_NUMBER(), RANK(), DENSE_RANK()
+
+🛠 Hands-on Practice:
+✔ Write queries to filter & aggregate sales data
+✔ Use JOINs to merge customer & order tables
+✔ Write a window function query to get top-selling products
+
+📌 Resources:
+
+    🎥 SQL for Beginners – W3Schools
+    🎥 SQL Window Functions
+
+📌 Week 2: Advanced Query Writing & Stored Procedures
+
+📚 Topics to Learn:
+✅ Advanced SQL Queries – CASE, COALESCE, PIVOT
+✅ Writing Stored Procedures in SQL
+✅ Using User-Defined Functions (UDFs)
+✅ Error Handling – TRY...CATCH in SQL
+
+🛠 Hands-on Practice:
+✔ Write a stored procedure to get sales by region
+✔ Create a UDF to calculate customer discounts
+✔ Use PIVOT to transform row data into columns
+
+📌 Resources:
+
+    🎥 Stored Procedures – Microsoft Learn
+
+📌 Week 3: SQL Performance Tuning & Optimization
+
+📚 Topics to Learn:
+✅ Indexing – Clustered vs. Non-Clustered Indexes
+✅ Query Execution Plans & Optimization Techniques
+✅ Using CTEs vs. Temp Tables vs. Table Variables
+✅ Partitioning Large Tables for Faster Queries
+
+🛠 Hands-on Practice:
+✔ Create indexes on a large table & analyze query speed
+✔ Use EXPLAIN PLAN to debug slow queries
+✔ Partition a large dataset & compare performance
+
+📌 Resources:
+
+    🎥 SQL Indexing Guide
+    🎥 Query Performance Tuning
+
+📌 Week 4: SQL for Azure Synapse & Data Engineering
+
+📚 Topics to Learn:
+✅ Writing SQL Queries for Azure Synapse Analytics
+✅ PolyBase – Querying External Data from Azure Data Lake
+✅ Working with Data Warehouse Tables – Fact & Dimension
+✅ Using SQL in Azure Data Factory & Databricks
+
+🛠 Hands-on Practice:
+✔ Load data into Azure Synapse and run complex queries
+✔ Use PolyBase to query data in Azure Data Lake
+✔ Write a SQL script in Azure Data Factory for transformation
+
+📌 Resources:
+
+    🎥 Azure Synapse SQL Guide
